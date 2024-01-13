@@ -65,7 +65,7 @@ function renderWalkingRoutes(walkingRoutes, fromTo = [0, 9]) {
         rowName.textContent = walkingRoute.name.length <= maxLetters ? walkingRoute.name : walkingRoute.name.slice(0, maxLetters) + "...";
         rowDescription.textContent = walkingRoute.description.length <= maxLetters ? walkingRoute.description : walkingRoute.description.slice(0, maxLetters) + "...";
         rowMainObjects.textContent = walkingRoute.mainObject.length <= maxLetters ? walkingRoute.mainObject : walkingRoute.mainObject.slice(0, maxLetters) + "...";
-        rowSelect.innerHTML = `<button type="button" class="id-${walkingRoute.id} btn btn-walking-route btn-outline-success px-5" onclick="location.href='#pagination-walking-routes';">Выбрать</button>`;
+        rowSelect.innerHTML = `<button type="button" class="id-${walkingRoute.id} btn btn-walking-route btn-outline-danger px-5" onclick="location.href='#pagination-walking-routes';">Выбрать</button>`;
         setAttributesForTooltip(rowName, walkingRoute.name);
         setAttributesForTooltip(rowDescription, walkingRoute.description);
         setAttributesForTooltip(rowMainObjects, walkingRoute.mainObject);
