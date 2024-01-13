@@ -29,9 +29,9 @@ let currentPage = 1;
 let maxPage = 1;
 // Функция для обработки маршрутов
 function walkingRoutesHandler() {
-    let url = new URL("http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes");
+    let url = new URL("https://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes");
     url.searchParams.append('api_key', api_key);
-    let xhr = new XMLHttpRequest();
+    let xhr = new XMLhttpsRequest();
     xhr.open('GET', url.toString());
     xhr.responseType = 'json';
     xhr.onload = function () {
@@ -245,9 +245,9 @@ function walkingRouteBtnHandler(event) {
             guidesRouteName.innerHTML = route.name;
         }
     }
-    let url = new URL(`http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes/${routeId}/guides`);
+    let url = new URL(`https://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes/${routeId}/guides`);
     url.searchParams.append('api_key', api_key);
-    let xhr = new XMLHttpRequest();
+    let xhr = new XMLhttpsRequest();
     xhr.open('GET', url.toString());
     xhr.responseType = 'json';
     xhr.onload = function () {
@@ -357,9 +357,9 @@ function modalBtnSendHandler() {
     if (!dataCorrectnessCheck())
         return;
     console.log(sendData);
-    let url = new URL("http://exam-2023-1-api.std-900.ist.mospolytech.ru/api/orders");
+    let url = new URL("https://exam-2023-1-api.std-900.ist.mospolytech.ru/api/orders");
     url.searchParams.append('api_key', api_key);
-    let xhr = new XMLHttpRequest();
+    let xhr = new XMLhttpsRequest();
     xhr.responseType = 'json';
     xhr.open('POST', url);
     xhr.send(sendData);
