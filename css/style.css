@@ -56,13 +56,14 @@ h2{
 }
 
 ::selection {
-  background: #097d2e;
+  background: #7d0909;
   color: #EEE;
   text-shadow: none;
 }
 
 ::-moz-selection {
-  background: #097d2e;
+  background: #7d0909;
+  ;
   color: #EEE;
   text-shadow: none;
 }
@@ -88,11 +89,12 @@ html {
 
 
 .page-link {
-  color: #097d2e;
+  color:   #7d0909;
+  ;
 }
 .page-link:hover {
   color: #ffffff; 
-  background-color: #097d2e;
+  background-color: #7d0909;
 }
 
 .btn-guides.btn-outline-primary {
