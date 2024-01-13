@@ -31,7 +31,7 @@ let maxPage = 1;
 function walkingRoutesHandler() {
     let url = new URL("https://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes");
     url.searchParams.append('api_key', api_key);
-    let xhr = new XMLhttpsRequest();
+    let xhr = new XMLhttpRequest();
     xhr.open('GET', url.toString());
     xhr.responseType = 'json';
     xhr.onload = function () {
@@ -247,7 +247,7 @@ function walkingRouteBtnHandler(event) {
     }
     let url = new URL(`https://exam-2023-1-api.std-900.ist.mospolytech.ru/api/routes/${routeId}/guides`);
     url.searchParams.append('api_key', api_key);
-    let xhr = new XMLhttpsRequest();
+    let xhr = new XMLhttpRequest();
     xhr.open('GET', url.toString());
     xhr.responseType = 'json';
     xhr.onload = function () {
